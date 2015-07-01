@@ -1,7 +1,7 @@
 # Amazon eCommerce
 
 ## Description
-ecommerce platform with Stripe, Inventory, Emails, and a shopping cart
+ecommerce platform with Stripe, Inventory, and Emails
 
 
 ## Objectives
@@ -41,15 +41,12 @@ After completing this assignment, you be able to effectively use
 
 * a Rails app, live on Heroku
 * a layout that looks "not-embarassing"
-* a checkout process with a shopping cart, shipping, and billing information
 
 
 
 ## Normal Mode
 
-Your products are listing on the homepage, and can be added to a cart.  
-
-Your cart will list the items in the cart; adding a product to the cart again will increase the quantity, rather than adding another cart item. You should be able to edit the quantity and should be able to delete a cart item.
+Your products are listing on the homepage, and can be viewed and then purchased.
 
 Your checkout process should be secure, and use Stripe Checkout -- the payola checkout is recommended.
 
@@ -59,9 +56,9 @@ Use Rails Admin for administration of your app.
 
 Everything in Normal mode, plus:
 
-1. Add a search engine that will let you search for items.
+1. Add a search engine (`pg_search gem`) that will let you search for items.
 
-2. When you add an item to the cart, stay on that page and give visual feedback to the user by a) the cart icon in the header b) change the "Add to cart" button to be text with "Added to Cart [View Cart](#)"
+2. When you add an item to the cart (`https://github.com/crowdint/acts_as_shopping_cart`) , stay on that page and give visual feedback to the user by a) the cart icon in the header b) change the "Add to cart" button to be text with "Added to Cart [View Cart](#)"
 
 3. Create a "receipt" page that you can email to them securely, viewable without sign in
 
@@ -74,8 +71,6 @@ Everything in Normal mode, plus:
 2. On results of the search engine, allow them to query by price "< $50" and ">= $50"
 
 3. Allow users to see their previous purchases
-
-4. Enable "Paper Trail" to see how sales change over time and integrate with Payola.
 
 5. Use a custom domain name
 
